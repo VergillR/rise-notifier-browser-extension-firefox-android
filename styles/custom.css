@@ -1,0 +1,103 @@
+body {
+  font-family: 'Gilroy', 'Open Sans', 'sans-serif' !important;
+  background-image: url('./../images/silver3.png');
+  padding: 0px;
+  margin: 0px;
+}
+label {
+  font-weight: bold;
+}
+@-webkit-keyframes looping {
+  0%   {left: -16%; transform: scale(1.5,1.5); opacity: 0;}
+  20%  {left: 10%; opacity: 0.5;}
+  40%  {left: 35%; transform: scale(1,1); opacity: 1;}
+  60%  {left: 60%; opacity: 0.5;}
+  80%  {left: 85%; opacity: 0.2;}
+  100% {left: 100%; opacity: 0;}
+}
+@keyframes looping {
+  0%   {left: -16%; transform: scale(1.5,1.5); opacity: 0;}
+  20%  {left: 10%; opacity: 0.5;}
+  40%  {left: 35%; transform: scale(1,1); opacity: 1;}
+  60%  {left: 60%; opacity: 0.5;}
+  80%  {left: 85%; opacity: 0.2;}
+  100% {left: 100%; opacity: 0;}
+}
+.titletext {
+  size: 110%;
+  position: relative;
+  text-align: right;
+  font-weight: bold;
+  color: darkblue;
+  opacity: 1;
+  z-index: 100 !important;
+}
+.movement {
+  bottom: 10px;
+  position: absolute;
+  -webkit-animation-name: looping;
+  -webkit-animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-direction: alternate;
+  animation-name: looping;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  z-index: 0;
+}
+.incoming {
+  background-color: forestgreen;
+  border: 1px solid lightgreen;
+  border-radius: 10px;
+}
+.outgoing {
+  background-color: orange;
+  border: 1px solid red;
+  border-radius: 10px;
+}
+.description {
+  font-weight: bold;
+  color:darkblue;
+}
+div.recipientId {
+  color: green;
+  font-weight: bold;
+}
+div.senderId {
+  color: tomato;
+  font-weight: bold;
+}
+.ui.segments.options_addresses, .ui.segments.options_watchmessages {
+  min-width: 100%;
+  width: max-content;
+  width: -moz-max-content;
+  width: -webkit-max-content;
+}
+.ui.segment.clickable {
+  cursor: pointer;
+}
+.ui.segment.clickable i.icon {
+  text-decoration-line: none;
+}
+.ui.segment.clickable:hover {
+  background-image: linear-gradient(to bottom right, white, #85ABFF);
+}
+div.ui.violet.pointing.label.blockexplorer:hover {
+  color: orange !important;
+}
+span.val {
+  word-wrap: break-word;
+  overflow: hidden;
+}
+#bottombutton {
+  background-color: linen !important;
+  border: none !important;
+}
+#bottombutton:hover {
+  background-image: linear-gradient(to bottom right, white, orange);
+}
+#stage {
+  background-image: url('./../images/silver3.png');
+}
